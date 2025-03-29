@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
+
+      <title>The Love Of My Life</title>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style>
+        body{
+          background-image: url("background2.jpg");
+        }
+        
+        div{
+          text-align: center
+        }
+        
+        .container{
+          border-radius: 20px;
+          color: white;
+          text-align: center;
+          margin-left: 50px;
+          margin-right: auto;
+          margin-top: 50px;
+          padding-top: 5px;
+          padding-bottom: 10px;
+          width: 600px;
+          background-color: lightblue;
+          display : inline-block;
+          color: black;
+        }
+        .img{
+          display : inline-block;
+          width : 300px;
+          margin-right: 100px;
+          float : right;
+          transition : 0.3s;
+        }
+          
+        h1{
+        color: black;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+                     0 3px 0 #ccc, 0 4px 0 #ccc,
+                     0 5px 0 #ccc, 0 6px 0 #ccc,
+                     0 7px 0 #ccc, 0 8px 0 #ccc;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 75px;
+        font-weight: 100;
+        }
+
+        .button {
+        
+          border: none;
+          border-radius: 20px;
+          color: white;
+          padding: 10px 50px;
+            
+          font-size: 20px;
+          margin: 10px 2px;
+          transition-duration: 0.6s;
+          cursor: pointer;
+        }
+        
+        .button1 {
+          background-color: #75E6DA; 
+          color: black; 
+          border: 2px solid #75E6DA; 
+        }
+
+        .button1:hover {
+          background-color: #05445E;
+          color: black;
+        }
+
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+      </style>
+    </head>
+
+    <body>
+      <ul>
+      <li><a class="active" href="birthday.html">Birthday Post</a></li>
+      <li><a href="anniversary.html">Anniversary Post</a></li>
+      
+</ul>
+      <div >
+        <h2>To the Love Of My Life</h2>
+        <h1> Happy 4 years Anniversary Baby</h1>
+      </div>
+
+      <div class= container>
+        <h2 style="text-align:center;">FOUR ALREADY!!!!</h2>
+        <p >Happy anniversary PRINCESS!. Four years of our like 19 years of knowing each other. These 4 have been like no other. I have only ever loved you more and more as time passes. I'm so grateful to have you in my life, to call you mine. 
+<br></br>Four years in the grand scheme may seem short, but look how quickly it passed. Soon it'll be 10, and the 20 and then forever. Happy four years anniversary babe. I love you so so much.</p>
+      
+      </div>
+
+      <img class= img src = "" id = "image">
+
+          
+        
+
+      
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript">
+        
+        let image = document.getElementById('image');
+        let images = ['VA1.jpeg', 'VA2.jpeg', 'VA3.jpeg','VA4.jpeg','2024_1.jpg','2024_2.jpg','2024_3.jpg', '2024_5.jpg', '2024_6.jpg', '2025_01', '2025_02', '2025_03']
+        
+        setInterval(function() {
+          let random = Math.floor ( Math.random() * 11);
+          image.src = images[random];
+        }, 1500);
+
+      </script>
+      
+    </body>
+  </html>

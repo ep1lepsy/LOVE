@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
+
+      <title>The Love Of My Life</title>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style>
+        body{
+          background-image: url("background2.jpg");
+        }
+        
+        div{
+          text-align: center
+        }
+        
+        .container{
+          border-radius: 20px;
+          color: white;
+          text-align: center;
+          margin-left: 50px;
+          margin-right: auto;
+          margin-top: 50px;
+          padding-top: 5px;
+          padding-bottom: 10px;
+          width: 600px;
+          background-color: lightblue;
+          display : inline-block;
+          color: black;
+        }
+        .img{
+          display : inline-block;
+          width : 300px;
+          margin-right: 100px;
+          float : right;
+          transition : 0.3s;
+        }
+          
+        h1{
+        color: black;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+                     0 3px 0 #ccc, 0 4px 0 #ccc,
+                     0 5px 0 #ccc, 0 6px 0 #ccc,
+                     0 7px 0 #ccc, 0 8px 0 #ccc;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 75px;
+        font-weight: 100;
+        }
+
+        .button {
+        
+          border: none;
+          border-radius: 20px;
+          color: white;
+          padding: 10px 50px;
+            
+          font-size: 20px;
+          margin: 10px 2px;
+          transition-duration: 0.6s;
+          cursor: pointer;
+        }
+        
+        .button1 {
+          background-color: #75E6DA; 
+          color: black; 
+          border: 2px solid #75E6DA; 
+        }
+
+        .button1:hover {
+          background-color: #05445E;
+          color: black;
+        }
+
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+      </style>
+    </head>
+
+    <body>
+      <ul>
+      <li><a class="active" href="birthday.html">Birthday Post</a></li>
+      <li><a href="anniversary.html">Anniversary Post</a></li>
+      
+</ul>
+      <div > 
+        <h2>To the Love Of My Life</h2>
+        <h1> Happy Anniversary Baby</h1>
+      </div>
+
+      <div class= container>
+        <h2 style="text-align:center;">Happy Anniversary Baby</h2>
+        <p >Happy anniversary babygirl!. I can't believe its been 2 years already. I have only grown to love you more each 
+ second, hour and day that goes by. For the last 2 years you made every day worth it with that cute smile and humour. There are honestly not even words that describe the kind of love that I have for you.<br></br>I am so in love with you that I there is no part of me that sees a future where you aren't my wife. I cannot wait for that because ypure the girl of my dreams.<br></br>The sweetest, cutest, prettiest, sexiest girl in the world and you're all mine. It really is like a dream come true and i'll try my best to give you everything that you deserve because youve already given me so much love and happiness and its only been 2 years. Happy Anniversary my love. I love you so so much.</p>
+      
+      </div>
+
+      <img class= img src = "" id = "image">
+
+          
+        
+
+      
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript">
+        
+        let image = document.getElementById('image');
+        let images = ['VA1.jpeg', 'VA2.jpeg', 'VA3.jpeg','VA4.jpeg']
+        
+        setInterval(function() {
+          let random = Math.floor ( Math.random() * 4);
+          image.src = images[random];
+        }, 1500);
+                                        
+      </script>
+      
+    </body>
+  </html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
+
+      <title>The Love Of My Life</title>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style>
+        body{
+          background-image: url("background0.jpeg");
+        }
+        
+        div{
+          text-align: center
+        }
+        
+        .container{
+          border-radius: 20px;
+          color: white;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 50px;
+          padding-top: 5px;
+          padding-bottom: 10px;
+          width: 400px;
+          background-color: lightblue;
+          color: black;
+        }
+        
+        h1{
+        color: black;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+                     0 3px 0 #ccc, 0 4px 0 #ccc,
+                     0 5px 0 #ccc, 0 6px 0 #ccc,
+                     0 7px 0 #ccc, 0 8px 0 #ccc;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 75px;
+        font-weight: 100;
+        }
+
+        .button {
+        
+          border: none;
+          border-radius: 20px;
+          color: white;
+          padding: 10px 50px;
+            
+          font-size: 20px;
+          margin: 10px 2px;
+          transition-duration: 0.6s;
+          cursor: pointer;
+        }
+        
+        .button1 {
+          background-color: #75E6DA; 
+          color: black; 
+          border: 2px solid #75E6DA; 
+        }
+
+        .button1:hover {
+          background-color: #05445E;
+          color: black;
+        }
+
+      </style>
+    </head>
+
+    <body>
+      <div > 
+        <h1>To the Love Of My Life</h1>
+    
+      </div>
+
+      <div class= container>
+        <h2>Please insert the following:</h2>
+        
+        <label for="answer">Full name (First Middle Last):</label><br>
+        <input type="text" id="answer"><br>
+        <label for="answer2">Birthday (dd/mm/yyyy):</label><br>
+        <input type="text" id="answer2"><br>
+        <button class="button button1" onclick="getAnswer()" >Submit</button>
+        <br>
+        
+
+      
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" >
+        
+      function getAnswer(){
+        let answer = document.getElementById('answer').value;
+        let answer2 = document.getElementById('answer2').value;
+        checkanswer(answer,answer2);
+      }
+
+      function checkanswer(answer,answer2){
+        if(answer == "Ambika Sanjna Maharaj" && answer2 == "08/09/2001")
+        {
+          alert("Welcome baby!");
+          window.location.href = "choice.html";
+        }
+        else{
+          alert("Incorrect! Please enter again");
+          window.location.href = "index.html";
+        }
+      }
+      </script>
+    </body>
+  </html>
